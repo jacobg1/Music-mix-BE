@@ -1,0 +1,28 @@
+{
+  "name": "music-mix",
+  "version": "1.0.0",
+  "description": "integrates with spotifys api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobg1/Music-mix-BE.git"
+  },
+  "keywords": [
+    "music",
+    "mix",
+    "back",
+    "end"
+  ],
+  "author": "Jacob Greenwald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobg1/Music-mix-BE/issues"
+  },
+  "homepage": "https://github.com/jacobg1/Music-mix-BE#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
