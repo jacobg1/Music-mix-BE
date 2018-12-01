@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express')
 const app = express()
+const axios = require('axios')
 const port = process.env.PORT || 3000
 const songs = require('./routes/songs')
 
@@ -13,7 +14,16 @@ const songs = require('./routes/songs')
 // }
 
 app.all('*', function (req, res, next) {
-    console.log('all route')
+   
+    axios.get('https://icanhazdadjoke.com/', {
+        headers: {
+            'Accept': 'text/plain'
+        }
+    })
+    .then(function (response) {
+        console.log(response.data)
+    })
+
     next()
 })
 
